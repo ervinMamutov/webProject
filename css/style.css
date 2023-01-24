@@ -32,5 +32,45 @@ h6 {
 html,
 body {
   height: 100%;
+}
+
+body {
   line-height: 1;
+  font-family: Manrope, Arial, sans-serif;
+  color: #333333;
+}
+
+.wrapper {
+  min-height: 100%;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.page {
+  flex: 1 1 auto;
+}
+
+[class*="__container"]{          /*bounding container*/
+  max-width: 1170px;
+  margin: 0 auto;
+}
+
+@media (max-width: 1199.98px) {
+  [class*="__container"]{
+    max-width: 970px;
+  }  
+}
+
+@media (max-width: 990.98px) {
+  [class*="__container"]{
+    max-width: 750px;
+  }  
+}
+
+@media (max-width: 767.98px) {
+  [class*="__container"]{
+    max-width: none;
+    padding: 0px 15px;
+  }  
 }
